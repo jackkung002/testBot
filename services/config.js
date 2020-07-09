@@ -30,17 +30,19 @@ module.exports = {
   mPlatformVersion: "v3.2",
 
   // Page and Application information
-  pageId: process.env.PAGE_ID,
-  appId: process.env.APP_ID,
-  pageAccesToken: process.env.PAGE_ACCESS_TOKEN,
-  appSecret: process.env.APP_SECRET,
-  verifyToken: process.env.VERIFY_TOKEN,
+  pageId: process.env.PAGE_ID || "100851888372835",
+  appId: process.env.APP_ID || "281899309917663",
+  pageAccesToken:
+    process.env.PAGE_ACCESS_TOKEN ||
+    "EAAEAYsw65d8BALRfnP9bimhIhnCrsv9POFYiCARrUcn56lF0ADZAdXW37ktS83zU3Ln2XkmUKFjtZB07tSfLkVFxEyvcwnID3ZCzijTeEKTpEnI3ribwNHM1e7K4NZAwinmuXJs1p6ZA2O0NqGZAJrG8UNhzDH2C1P3vK6kJjVQwZDZD",
+  appSecret: process.env.APP_SECRET || "ca32bc0dbb32276bf8a320ac2ec383aa",
+  verifyToken: process.env.VERIFY_TOKEN || "TEST_1234_HOOK",
 
   // URL of your app domain
-  appUrl: process.env.APP_URL,
+  appUrl: process.env.APP_URL || "",
 
   // URL of your website
-  shopUrl: process.env.SHOP_URL,
+  shopUrl: process.env.SHOP_URL || "",
 
   // Persona IDs
   personas: {},
